@@ -1,0 +1,47 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title> (STACK) </title>
+</head><body>
+<script type="text/javascript">
+
+//Stack dito ang start yung sa YT yung iba dagdag ko lang nag try ako paganahin sa notepad
+
+		class Stack {
+			constructor() {
+			this.storage  = {}
+			this.size = 0
+			}		
+			
+			push(element) {
+			this.size++
+			this.storage[this.size] = element
+			console.log(this.storage)
+			}
+			
+			pop(){
+			let removed = this.storage[this.size]
+			delete this.storage[this.size]
+			this.size--
+			return removed
+			console.log(this.storage)
+			}
+			
+			peek() {
+			return this.storage[this.size]
+			console.log(this.storage)
+			}
+		}
+
+			const stack = new Stack()
+			
+			stack.push('Una')
+			stack.push('Pangalawa')
+			stack.push('Pangatlo')
+			
+			console.log(this.storage)		
+	
+	</script>
+	</body>
+	</html>

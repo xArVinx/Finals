@@ -1,0 +1,43 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title> (Queue)</title>
+</head><body>
+<script type="text/javascript">
+
+// QUEUE
+
+class Queue {
+	constructor() {
+	this.storage = {}
+	this.head = 0 
+	this.tail = 0
+	}
+	
+	enqueue(element) {
+	this.storage[this.tail] = element
+	this.tail++
+	console.log(this.storage)
+	}
+	
+	dequeue() {
+	let removed = this.storage[this.head]
+	delete this.storage[this.head]
+	this.head++
+	return removed
+	console.log(this.storage)
+}
+}
+
+const queue = new Queue()
+
+queue.enqueue('BSIT')
+queue.enqueue('4D')
+queue.enqueue('CvSU-CCC')
+
+console.log(this.storage)
+	
+		
+</script>
+</body></html>
